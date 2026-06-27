@@ -1,11 +1,37 @@
-# Taxonomy of public services
+# Politics
 
-## Context
-Even though the CPSV-AP pushes for the harmonisation between catalogue of public services in Europe, our experience has shown that most of the catalogues and egovernment portals are following different taxonomies or big differences exist in the naming of public services. 
-This leads to additional work for harmonising multiple catalogues, for instance for mapping the different terms. While each catalogue of services contains specific services offered to citizens, business and other organisations, generic public services common to most of the catalogues exist but use different names and definitions. A commonly agreed taxonomy of generic public services would help public administrations to align their catalogue of services.
+A working repository for building a **smart, economically liberal** political movement in **Ghent, Belgium**.
 
-## Objective
-To agree on a first level of generic terms for the taxonomy of public services
+> For voters who would normally choose Open VLD or Volt — but want competence, clarity, and results instead of drift.
 
-## How to contribute?
-Follow the ReadMe directly included within the taxonomy file [here](https://github.com/catalogue-of-services-isa/Taxonomy/blob/master/Taxonomy%20proposal%20v0.10.xlsx).
+## Why this exists
+
+Flemish liberal politics has lost its edge. Open VLD oscillates between caution and confusion. Volt offers energy but lacks a sharp economic programme. Ghent deserves better: a party that combines **economic freedom**, **evidence-based governance**, and **local pragmatism**.
+
+This repo is the starting point — not a finished party, but a place to define what we stand for and how we build it.
+
+## Quick links
+
+| Document | Description |
+|----------|-------------|
+| [Vision & principles](docs/vision.md) | What we believe and why |
+| [Policy programme](docs/programme.md) | Concrete positions for Ghent and Flanders |
+| [Party name ideas](docs/naming.md) | Working titles and branding direction |
+| [Getting started](docs/getting-started.md) | How to turn this into a real movement |
+| [Contributing](CONTRIBUTING.md) | How to participate |
+
+## Core idea in one sentence
+
+**Make Ghent the most entrepreneurial, well-governed city in Europe — without sacrificing openness, sustainability, or quality of life.**
+
+## Status
+
+🟡 **Exploratory** — defining principles, gathering supporters, no formal registration yet.
+
+## Language
+
+Primary language: **Dutch (Flemish)**. English summaries where useful for international context.
+
+## License
+
+Content in this repository is shared under [CC BY-SA 4.0](LICENSE) unless stated otherwise.
