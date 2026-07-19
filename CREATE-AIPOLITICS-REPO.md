@@ -19,12 +19,19 @@ https://github.com/new?name=AIpolitics&description=Source+of+truth+for+Ghent+pol
 
 Create repository.
 
-## 2. Grant Cursor access
+## 2. Grant Cursor access (required — the agent cannot do this)
 
-If you use Cursor Cloud Agents on this repo:
+`AIpolitics` already exists. The agent still gets **403** from `cursor[bot]` until you add the repo to the Cursor GitHub App.
 
-1. GitHub → Settings → Applications → **Cursor** (GitHub App), or accept the Cursor install prompt
-2. Grant access to **AIpolitics** (all repos, or select this one)
+Fastest path:
+
+1. Open: https://github.com/apps/cursor/installations/new  
+   (or: GitHub → Settings → Applications → Installed GitHub Apps → **Cursor** → Configure)
+2. Choose **Only select repositories** and add **`AIpolitics`**  
+   (or switch to **All repositories**)
+3. Save
+
+Also works from Cursor: https://cursor.com/dashboard/integrations → GitHub → Manage → include `AIpolitics`.
 
 ## 3. Tell the agent
 
