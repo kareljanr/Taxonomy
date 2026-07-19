@@ -1,52 +1,44 @@
-# Create the AIpolitics GitHub repository
+# Why the cloud agent still cannot push
 
-The Cursor cloud agent **cannot** create a new GitHub repository under `kareljanr` — the GitHub App token only has access to the existing Taxonomy fork.
+Your Cursor GitHub App may correctly say **All repositories**. That is necessary but not sufficient for *this* agent run.
 
-Do this once (about one minute), then reply in the agent chat that the repo exists:
+## What we see from inside the agent
 
-## 1. Create the empty repo
-
-Open this link (pre-filled name):
-
-https://github.com/new?name=AIpolitics&description=Source+of+truth+for+Ghent+political+party+%2F+smart+liberal+movement+work&visibility=public
-
-| Field | Value |
-|-------|--------|
-| Owner | `kareljanr` |
-| Repository name | `AIpolitics` |
-| Visibility | Public (recommended) or Private |
-| Initialize | **Do not** add README, .gitignore, or license |
-
-Create repository.
-
-## 2. Grant Cursor access (required — the agent cannot do this)
-
-`AIpolitics` already exists. The agent still gets **403** from `cursor[bot]` until you add the repo to the Cursor GitHub App.
-
-Fastest path:
-
-1. Open: https://github.com/apps/cursor/installations/new  
-   (or: GitHub → Settings → Applications → Installed GitHub Apps → **Cursor** → Configure)
-2. Choose **Only select repositories** and add **`AIpolitics`**  
-   (or switch to **All repositories**)
-3. Save
-
-Also works from Cursor: https://cursor.com/dashboard/integrations → GitHub → Manage → include `AIpolitics`.
-
-## 3. Tell the agent
-
-Reply with something like: **AIpolitics is created — please push.**
-
-The agent will push the prepared content (vision, programme, naming, workflow docs) to `main` on `https://github.com/kareljanr/AIpolitics`.
-
-## Manual push (optional)
-
-If you prefer to push yourself from this branch after creating the empty repo:
-
-```bash
-# from a clean clone of this content, or after checking out cursor/aipolitics-repo-af77
-git remote add aipolitics https://github.com/kareljanr/AIpolitics.git
-git push -u aipolitics HEAD:main
+```text
+GET /installation/repositories
+→ repository_selection: "selected"
+→ total_count: 1
+→ only: kareljanr/Taxonomy
 ```
 
-Then set `main` as the default branch on GitHub if needed.
+Push / Contents API to `kareljanr/AIpolitics` → **403 Permission denied to cursor[bot]**.
+
+This run was started on **Taxonomy**. Cursor issues a short-lived installation token **scoped to that repo**. So the agent cannot write to `AIpolitics` even when the App installation covers all repos.
+
+## Fastest ways to finish
+
+### A) One command on your machine (recommended)
+
+You own `AIpolitics`, so your credentials work:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/kareljanr/Taxonomy/cursor/aipolitics-repo-af77/scripts/push-aipolitics.sh | bash
+```
+
+Or clone and run:
+
+```bash
+gh auth status   # must be kareljanr (or an account with push on AIpolitics)
+bash scripts/push-aipolitics.sh
+```
+
+### B) New Cloud Agent on AIpolitics
+
+1. Open Cursor → Cloud Agent → select repo **`kareljanr/AIpolitics`**
+2. Prompt: *Pull content from Taxonomy branch `cursor/aipolitics-repo-af77` and push it as `main` here (clean history, drop CREATE-AIPOLITICS-REPO.md).*
+
+That new run gets a token scoped to AIpolitics and can push.
+
+## Do not merge into Taxonomy
+
+Taxonomy remains a SEMIC fork. Keep party work only in **AIpolitics**.
