@@ -6,7 +6,9 @@ Do this once (about one minute), then reply in the agent chat that the repo exis
 
 ## 1. Create the empty repo
 
-Open: https://github.com/new
+Open this link (pre-filled name):
+
+https://github.com/new?name=AIpolitics&description=Source+of+truth+for+Ghent+political+party+%2F+smart+liberal+movement+work&visibility=public
 
 | Field | Value |
 |-------|--------|
