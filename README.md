@@ -1,8 +1,10 @@
-# Politics
+# AIpolitics
 
-A working repository for building a **smart, economically liberal** political movement in **Ghent, Belgium**.
+Source of truth for building a **smart, economically liberal** political movement in **Ghent, Belgium**.
 
 > For voters who would normally choose Open VLD or Volt — but want competence, clarity, and results instead of drift.
+
+This repository is meant to be the shared workspace across machines and tools (Cursor, Grok, local clones, etc.). Clone it, work on a branch, push — same source of truth everywhere.
 
 ## Why this exists
 
@@ -19,6 +21,7 @@ This repo is the starting point — not a finished party, but a place to define 
 | [Party name ideas](docs/naming.md) | Working titles and branding direction |
 | [Getting started](docs/getting-started.md) | How to turn this into a real movement |
 | [Contributing](CONTRIBUTING.md) | How to participate |
+| [Multi-tool workflow](docs/workflow.md) | Working from Cursor, Grok, and other machines |
 
 ## Core idea in one sentence
 

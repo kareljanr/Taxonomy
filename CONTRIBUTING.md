@@ -1,6 +1,8 @@
 # Contributing
 
-This is an open planning repository. Anyone who shares the broad direction (smart, economically liberal, Ghent-focused) can contribute.
+This is the **AIpolitics** planning repository. Anyone who shares the broad direction (smart, economically liberal, Ghent-focused) can contribute.
+
+Canonical remote: `https://github.com/kareljanr/AIpolitics` — use that for clones, Cursor, and other tools.
 
 ## How to contribute
 
